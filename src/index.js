@@ -1,12 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import "./styles.css";
-import App from "./App";
-import { HashRouter as Router } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+import App from "./App";
+import AnimeDetails from "./AnimeDetails";
+
+const root = createRoot(document.getElementById("root"));
+
 root.render(
-  <Router>
+  <StrictMode>
     <App />
-  </Router>
+    <AnimeDetails />
+  </StrictMode>
 );
