@@ -3,13 +3,13 @@ import { createRoot } from "react-dom/client";
 import "./styles.css";
 
 import App from "./App";
-import AnimeDetails from "./AnimeDetails";
+import Bored from "./Bored";
 
 const root = createRoot(document.getElementById("root"));
 
 root.render(
   <StrictMode>
     <App />
-    <AnimeDetails />
+    <Bored />
   </StrictMode>
 );
